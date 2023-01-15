@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+  @apply font-poppins
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eudoxus Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 5px solid #1E1E1E;
+  color: #1E1E1E;
+  filter: drop-shadow(0px 0px 20px rgba(30, 30, 30, 0.25));
+}
+
+.gradient-light {
+  background: linear-gradient(360deg,
+      #1E1E1E -12.28%,
+      rgba(30, 30, 30, 0) 105.7%);
+}
+
+.gradient-radial-light {
+  background: radial-gradient(50% 555.56% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.drop-shadow-contact {
+  filter: drop-shadow(0px 0px 20px rgba(30, 30, 30, 0.25));
+}
